@@ -1,7 +1,7 @@
-watir-kickstart
+Watir Kickstart
 ===============
 
-Watir Kickstart
+Watir Kickstart is the base set of files, which could be used for creation of Watir Tests. This set is optimized to be ran as Jenkins job.
 
 ## Example of Registration module
 
@@ -23,14 +23,10 @@ Watir Kickstart
         text_field(:name, "location_address2_ba").set(user[:billing_street2])
         text_field(:name, "location_city_ba").set(user[:billing_city])
         select_list(:name, "location_country_ba").select(user[:billing_country])
-        sleep 5
+        sleep 5 # Wait 5 seconds. The State select list should be updated by AJAX call.
         select_list(:name, "location_state_ba").select(user[:billing_state])
         text_field(:name, "location_postal_ba").set(user[:billing_zip])
         text_field(:name, "location_phone_ba").set(user[:billing_phone])
-
-        if with_shipping
-          # Fill shipping address
-        end
       end
 
       def submit_reg_form
