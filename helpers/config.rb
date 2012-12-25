@@ -13,7 +13,7 @@ RSpec.configure do |config|
 
   # Actions before and after ALL
   config.before(:all) {
-    @site_url = "http://example.com/" # Change me
+    @site_url = "http://example.com/" # TODO Change me
 
     @headless = Headless.new
     @headless.start
