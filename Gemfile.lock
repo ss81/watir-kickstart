@@ -10,6 +10,7 @@ GEM
     libwebsocket (0.1.6.1)
       websocket
     multi_json (1.3.7)
+    rake (10.0.3)
     rspec (2.12.0)
       rspec-core (~> 2.12.0)
       rspec-expectations (~> 2.12.0)
@@ -39,6 +40,7 @@ PLATFORMS
 
 DEPENDENCIES
   headless
+  rake
   rspec
   rspec_junit_formatter
   watir-rspec

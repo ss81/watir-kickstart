@@ -1,11 +1,12 @@
 require "./helpers/config"
-require "./helpers/user"
+require "./helpers/pcms_accounts"
+require "./helpers/pcms_registration"
 
 describe "Example" do # TODO Set description of the test suite.
   # Include required functions from modules.
   include PCMS::WatirWrapper
-  include PCMS::Users::Accounts
-  include PCMS::Users::Registration
+  include PCMS::Accounts
+  include PCMS::Registration
 
   it "Registration with valid data" do # TODO Set the description of the test#1.
     # TODO Write the code of test#1.
