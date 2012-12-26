@@ -9,6 +9,7 @@ require "watir/rspec/helper"
 require "./helpers/pcms_watir_wrapper"
 
 RSpec.configure do |config|
+  config.include Watir::RSpec::Helper
   config.include PCMS::WatirWrapper
 
   ###############################
