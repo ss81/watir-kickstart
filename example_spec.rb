@@ -4,7 +4,6 @@ require "./helpers/pcms_registration"
 
 describe "Example" do # TODO Set description of the test suite.
   # Include required functions from modules.
-  include PCMS::WatirWrapper
   include PCMS::Accounts
   include PCMS::Registration
 
