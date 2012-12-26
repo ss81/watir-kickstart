@@ -52,7 +52,7 @@ RSpec.configure do |config|
       end
     end
 
-    # Close browser
+    # Close browser.
     @browser.close
   }
 end
