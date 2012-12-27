@@ -5,7 +5,7 @@ module PCMS
 
       return {
           :username => random,
-          :email => random + "@gmail.com",
+          :mail => random + "@gmail.com",
           :first_name => "ERIK",
           :last_name => "Marzett",
           :phone => "5555-555-555",
