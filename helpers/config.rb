@@ -62,6 +62,8 @@ RSpec.configure do |config|
       @headless.video.stop_and_save @path_to_report + @test_name + "--" + Time.now.strftime("%Y%m%d_%H%M%S") + ".mov"
     end
 
+    FileUtils.cp(File.expand_path("..", File.dirname(__FILE__)) + "/helpers/1x1-pixel.png", @path_to_report)
+
     # Close browser.
     @browser.close
   end
