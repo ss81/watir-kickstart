@@ -5,7 +5,7 @@ module PCMS
 
       return {
           :username => random,
-          :email => random + "@gmail.com",
+          :mail => random + "@gmail.com",
           :first_name => "ERIK",
           :last_name => "Marzett",
           :phone => "5555-555-555",
@@ -29,7 +29,7 @@ module PCMS
           :shipping_phone => "5555-555-555",
 
           :card_name => "ERIK Marzett",
-          :card_type => "V",
+          :card_type => "Visa",
           :card_num => "4111111111111111",
           :card_expire_date => "12",
           :card_year => "2014",
